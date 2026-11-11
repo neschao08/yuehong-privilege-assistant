@@ -2,14 +2,14 @@ subprojects {
     plugins.withId("com.android.base") {
         android {
             compileSdk {
-                version = release(35)
+                version = release(36)
             }
             buildToolsVersion = "36.0.0"
             ndkVersion = "29.0.13113456"
 
             defaultConfig {
                 minSdk = 24
-                targetSdk = 35
+                targetSdk = 36
             }
 
             compileOptions {
