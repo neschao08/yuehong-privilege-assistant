@@ -27,7 +27,7 @@ jobs:
           $sdk = (Get-ChildItem "$env:ANDROID_HOME\cmdline-tools" -Recurse -Filter "sdkmanager.bat" | Select-Object -First 1).FullName
           if (-not $sdk) { $sdk = "C:\Android\android-sdk\cmdline-tools\latest\bin\sdkmanager.bat" }
           "y`n" * 20 | & $sdk --licenses
-          & $sdk --install "build-tools;36.0.0" "ndk;29.0.13113456" "cmake;3.22.1" "platforms;android-35"
+          & $sdk --install "build-tools;36.0.0" "ndk;29.0.13113456" "cmake;3.22.1" "platforms;android-36"
       - name: Set Environment Variables
         shell: pwsh
         run: |
