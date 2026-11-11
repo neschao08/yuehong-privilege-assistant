@@ -28,8 +28,6 @@ jobs:
           if (-not $sdk) { $sdk = "C:\Android\android-sdk\cmdline-tools\latest\bin\sdkmanager.bat" }
           "y`n" * 20 | & $sdk --licenses
           & $sdk --install "build-tools;36.0.0" "ndk;29.0.13113456" "cmake;3.22.1" "platforms;android-35"
-          try { & $sdk --install "platforms;android-37" } catch { Write-Host "android-37 not available, continuing..." }
-
       - name: Set Environment Variables
         shell: pwsh
         run: |
