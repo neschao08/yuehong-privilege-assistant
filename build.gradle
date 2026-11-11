@@ -21,3 +21,10 @@ subprojects {
 }
 
 apply from: 'api/manifest.gradle'
+ext {
+  versionCode = 100190
+    versionName = "1.0.19"
+    // 月虹提权助手唯一版本源；manager Manifest 与 assistant 版本验证必須共同引用。
+    yuehongVersionCode = 167
+    yuehongVersionName = "v1.6.7"
+}
